@@ -1,0 +1,43 @@
+
+h1{
+    color:blue;
+    font-size:40px;
+    font-family: Verdana;
+    font-weight: bold;
+}
+
+a{
+    color:red;
+}
+a:hover{
+    color:blueviolet; 
+}
+.p-ul{
+    font-family: Verdana;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.p1-text{    
+    font-family: Verdana;
+    font-size: 24px;
+    font-weight: bold;
+    text-indent: 32px;
+    line-height:1.5;
+}
+.p2-title{    
+    font-size:30px;
+    font-family: Verdana;
+    font-weight: bold;
+    border-left: 8px solid red;
+    border-bottom:12px solid red;
+}
+.p3-li{
+    text-decoration: line-through;
+}
+
+.p4-img {
+    border: 10px solid gray;
+}
+
+
