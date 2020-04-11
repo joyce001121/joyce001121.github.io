@@ -1,0 +1,80 @@
+
+  body {
+    font-family: "微軟正黑體";
+    color: #37523d; 
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .wrap{  
+    display:flex;  
+    padding:10px;  
+    border:1px solid gray;
+  }
+  .menu {
+    width: 300px;
+    height: 80px;
+    text-align:center; 
+    font-size:30px;
+    font-weight:bold;
+    line-height:2.3;  
+    margin-right: 20px;
+  }
+  .menu-title{
+    height: 80px;
+    background: #37523d;
+    color: white; 
+  }
+  .menu li a{
+    width: 300px;
+    display:block;  
+    height: 80px;
+    text-decoration: none;
+    color:#37523d;
+    border:1px solid #e7eeea; 
+  }
+  .menu li a:hover{
+    background: #e7eeea;  
+  }
+  .product-box{
+    width: 700px;
+    display:flex;
+    flex-wrap:wrap;  
+  }
+  .product-item{
+    width: 300px;
+    margin: 0 10px 10px;;
+  }
+  .product-item img{
+    display:block;
+  }
+  .product-nameprice {
+    width:300px;
+    height:80px;
+    font-size:24px;
+    color: #37523d;
+    font-weight:bold;
+    display:flex;
+    text-align:center;
+    line-height:3;
+    }
+  .product-name {
+    width: 180px; 
+    border:1px solid #e7eeea;    
+  }
+  .product-price{
+    width: 120px; 
+    border:1px solid #e7eeea;    
+  }
+  .product-cart {
+    width:300px;
+    height: 85px;
+    background: #e7eeea;
+    color: #37523d;
+    text-decoration: none;
+    font-size:30px;
+    font-weight:bold;
+    line-height:2.5;
+    text-align:center;  
+    display:block;
+  }
