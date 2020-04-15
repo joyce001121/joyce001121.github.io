@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+.wrap{
+    width: 200px;    
+}
+.wrap img{
+    width: 200px;
+    display:block;
+    border-top: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+}
+.wrap-1{
+    display:flex;
+    justify-content:center;
+}
+.wrap-1 div{
+    width: 100px;
+    line-height: 2;
+    border: 1px solid lightgray;
+    text-align:center;
+}
+.wrap-1  a{
+    width: 200px;
+    line-height: 3;
+    background: lightpink;
+    text-align:center;
+    text-decoration: none;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+
