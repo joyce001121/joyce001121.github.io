@@ -302,4 +302,8 @@ table {
 }
 .link-wrap img{
   width: 48px;
+  height:48px;
+  display:block;
 }
+
+
