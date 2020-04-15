@@ -98,6 +98,7 @@ body {
 }
 .course-item li{
   list-style-type: disc;
+  list-style-position: outside;
   text-align: left;
   font-size: 14px;
   line-height: 1.5;

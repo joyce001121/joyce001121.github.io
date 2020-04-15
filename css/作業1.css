@@ -1,0 +1,305 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+/* ------------------- */
+.wrap{
+    margin-top: 48px;
+    font-family: 微軟正黑體 ;
+  }
+  
+  h3 {
+    font-size: 32px;
+    font-weight: bold;    
+    line-height: 45px;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+  }
+  h3 small{
+    color: #A00404;
+    font-size: 24px;  
+    height:32px;    
+  }
+  .padding-box{
+      width: 1200px;   
+      /* width: 800px;  */
+      margin: 0 auto;
+  }
+  .name h1{
+      font-size:80px;       
+      letter-spacing: 5px;
+      line-height:90px;    
+      margin-bottom: 24px;
+  }
+  .photo img{
+    width: 324px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .profile{
+    margin-bottom: 48px;    
+  }  
+  .profile-list{
+    padding-left: 24px;
+  }  
+  .profile-list li{
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 32px;
+  }  
+  .profile-list li::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: #96A9C4;
+  }  
+  .profile-list li:last-child::before{
+    height: 0;
+  }
+  .profile-list li::after{
+    content: '';
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    background: #96A9C4;
+  }  
+  .profile-list li:first-child::after{
+    height: 0;
+  }  
+  .profile-list li p{
+    font-size: 24px;
+    line-height: 1.46;
+    margin-bottom: 24px;
+  }
+  .profile-list li p::before{
+    content: '';
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 5%;
+    left: -8px;
+    border-radius: 50%;
+    background: #96A9C4;
+  }
+.education{
+    margin-bottom: 48px;
+}
+.education-list{
+  padding-left: 24px;
+}
+.education-list li{
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 32px;
+}
+.education-list li::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: #96A9C4;
+}
+.education-list li:last-child::before{
+  height: 0;
+}
+.education-list li::after{
+  content: '';
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  background: #96A9C4;
+}
+.education-list li:first-child::after{
+  height: 0;
+}
+.education-list li p{
+  font-size: 24px;
+  line-height: 1.5;
+}
+.education-list li p::before{
+  content: '';
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 40%;
+  left: -8px;
+  border-radius: 50%;
+  background: #96A9C4;
+}
+
+  /* 同學的程式碼 */
+  /* .skill-container{
+    width: 800px;
+    margin: 0 auto;
+  } */
+  
+  .skill-wrap {
+    padding: 29px 67px;
+    background-color: #415165 ;
+    position:relative;
+  }
+  
+  /* 用偽元素做背景的方塊 */
+  .skill-wrap:after {
+    content: "";
+    display: block;
+    height: 360px;
+    /* 做一個超級長的寬 */
+    width: 999999px;
+    /* 垂直置中定位 */
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    /* 推超級左邊 */
+    left: -999px;
+    background-color: #96A9C4 ;
+    z-index:-1;
+  }
+  
+.skill-wrap{
+  text-align: center;
+  color:white;
+  margin-bottom: 72px;
+}
+.skill-wrap h3{
+    font-size: 32px;
+    font-weight: bold;    
+    line-height: 45px;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 8px;
+    margin-bottom: 16px;     
+}
+.skill-wrap h3 span{
+  font-size:24px;
+  line-height: 32px;
+}
+.skill-list{
+  width: 240px;
+  margin: 0 auto;
+  border-left: 1px solid #ffffff
+}
+.skill-list li{  
+  text-align: left;
+  font-size:24px;
+  line-height:32px;
+  margin-bottom: 16px;
+  padding-left: 24px;
+}
+  
+.work-wrap{
+  margin-bottom: 72px;
+}
+.work-list{
+  margin-left: 23px;
+  padding-left: 23px;
+  border-left: 2px solid #96A9C4;  
+}
+.work-list h4{  
+  font-size:24px; 
+  font-weight:bold;
+  line-height:33px;
+}
+.work-list img{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.work-list p{
+  width: 642px;
+  font-size:20px;
+  line-height:30.1px;
+  margin-bottom: 32px;
+}
+.footer{
+  background: #415165;
+}
+.footer-wrap{  
+  text-align: center;
+  padding-top: 31px;
+  padding-bottom: 48px;
+
+}
+.footer-wrap h3{
+  color:white; 
+  border-bottom:1px solid white;  
+  margin-bottom: 32px;
+}
+.footer-wrap h3 small{
+  color: white;
+  font-size: 24px;  
+  height:32px; 
+}
+.footer-wrap p{
+  color:white;
+  font-size: 24px;  
+  height:33px;
+  margin-bottom: 16px;  
+}
+.link-wrap{
+  display: flex;
+  justify-content: center;
+}
+.link-wrap li{
+  padding-right: 24px;
+}
+.link-wrap img{
+  width: 48px;
+}
