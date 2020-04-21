@@ -51,7 +51,7 @@ table {
 /* ------------------- */
 * .wrap{
 	margin: 0 auto;
-	width: 1920px;
+	/* width: 1920px; */
 	font-family: Roboto , sans-serif  ;
 	text-align:center;
 	border: 1px solid #707070;
