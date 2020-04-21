@@ -47,28 +47,13 @@ table {
 	border-spacing: 0;
 }
 
+/* ------------------------------ */
+body {
+	font-family: 微軟正黑體, sans-serif ;
+	color: #37523d;
+  }
 *,*:before,*:after{
     box-sizing: border-box;
 }
-
-
-.wrap{
-    width: 600px;
-    display: flex;  
-  /*   justify-content:space-around; */
-    margin: 0 auto;
-    border: 1px solid gray;
-}
-.item{
-    width: 100px;
-    background: lightgray;
-    margin: 10px;
-    padding: 10px;;
-    border: 1px solid black;
-}
-.item1 p{
-    background: #e5ff00;
-}
-
 
 

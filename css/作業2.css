@@ -1,0 +1,262 @@
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------------- */
+* .wrap{
+	margin: 0 auto;
+	width: 1920px;
+	font-family: Roboto , sans-serif  ;
+	text-align:center;
+	border: 1px solid #707070;
+  }
+h2{
+	font-size: 64px;
+	font-weight: bold;
+	line-height: 75px;
+	font-style:italic;
+}
+p italic{
+	font-style: italic;
+} 
+.f24 ,.f24-h28, .f20 {
+	font-size: 24px;
+	font-weight:bold;
+}
+.f24-h28{
+	line-height: 28px;
+	font-style: italic;
+}
+.f24-h33{
+	line-height: 33px;
+	font-style: italic;
+}
+.f80-h94{
+	font-size: 80px;
+    line-height: 94px;
+	font-weight:bold;
+	font-style: italic;
+}
+.f20, .f20-h28 {
+	font-size:20px;	 
+	font-weight:media;
+}
+.f20-h28{
+	line-height: 28px;	 	
+}
+.mb8{
+	margin-bottom: 8px;
+}
+.mb16{
+	margin-bottom: 16px;
+}
+.mb18{
+	margin-bottom: 18px;
+}
+.mb22{
+	margin-bottom: 22px;
+}
+.mb24{
+	margin-bottom: 24px;
+}
+.mb30{
+	margin-bottom: 30px;
+}
+.mb32{
+	margin-bottom: 32px;
+}
+.mb34{
+	margin-bottom: 34px;
+}
+.mb26{
+	margin-bottom: 26px;
+}
+.mb32{
+	margin-bottom: 32px;
+}
+.mb40{
+	margin-bottom: 40px;
+}
+.mb48{
+	margin-bottom: 48px;
+}
+.mb56{
+	margin-bottom: 56px;
+}
+.mb58{
+	margin-bottom: 58px;
+}
+.mb64{
+	margin-bottom: 64px;
+}
+.mb160{
+	margin-bottom: 160px;
+}
+.alignLeft{
+	text-align: left; 
+}
+/* banner img */
+.banner{
+	background-image: url(../images/w2/banner.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 960px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}	
+.banner-center{
+	width: 315px;
+	margin: 0 auto;
+	padding-top: 110px;
+}
+.banner h1, .banner p{
+	color:white;
+}
+.social{
+	display: flex;
+}
+.social li{
+	margin-left: 16px;
+}
+
+/* About content */
+.about{
+	width: 500px;
+	margin: 0 auto;
+	padding-top: 64px;
+	padding-bottom: 56px;
+}
+.about hr{
+	width: 384px;
+	border: 1px solid #000000;
+}
+.about ul{
+	position: relative;
+}
+.about ul li{
+	position: relative;
+	text-indent:30px;
+}
+.dot1::before, .dot2::before, .dot3::before{ 
+	content:""; 
+	position: absolute; 
+	background:  #891818; 
+	width: 22px;height: 22px; 
+	border-radius: 50%; 
+	top: 10%; 
+}
+.dot1::before {	
+	left:77px ;
+}
+.dot2::before {	
+	left:132px;
+}
+.dot3::before {	
+	left:66px;
+}
+
+/* Brank content */
+.brand{
+	background: black;
+}
+.brand-center{
+	width: 1220px;
+	margin: 0 auto;
+	padding-top: 64px;
+	padding-bottom: 160px;
+}
+.brand h2, .brand p{
+	color:white;
+}
+.brand-img{
+	display: flex;
+	justify-content: space-between;
+}
+
+.other-header{
+	margin-top: 64px;
+	margin-bottom: 48px;
+	text-align: center;
+}
+.other-work{
+	height: 1718px; 
+	background-image: url(../images/w2/photo-1561291386-5be50364cfb5.png);
+	background-position: center bottom ;
+	background-repeat: no-repeat;
+	width: 100%;
+}
+.work-center{
+	width: 1200px;
+	margin: 0 auto;
+	color:white;
+}
+.design {
+	display: flex;
+	justify-content: center;
+}
+.design li {
+	margin-right: 24px;	
+}
+
+.footer{
+	background: #000;
+	text-align: center;
+	color:white;
+	padding-top: 64px;
+	padding-bottom: 80px;
+}
+
+
+
+
+
+
+
