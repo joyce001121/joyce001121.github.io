@@ -1,0 +1,46 @@
+ --------- google fonts
+ <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,700;1,900&display=swap');
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,700;1,900&display=swap" rel="stylesheet">
+-------------------------------------------
+老師、助教們好， 
+
+1.我在 excel 提交的資訊如下:
+
+編號：205   全職鬥士2組 Joyce Lee  https://joyce001121.github.io/
+
+
+
+針對這次對參考很同學及老師們的文章,對css 又學習到了很多,例如: 
+
+HTML5元素:header/main/section/footer.html
+
+偽元素及類別的作用及寫法
+
+版型以區塊分析
+
+字體或屬性值可以抽出共同部份一次設定
+
+背景圖片設定應用
+
+
+
+2.這次訓練菜單是：
+
+ 持續利用 emmet 練習
+
+ vscode hotkey練習
+
+ 另外,針對元素命名參考很多文章
+
+
+
+3.作業花費時間: 25hrs
+
+
+
+Best Regards,
+
+Joyce

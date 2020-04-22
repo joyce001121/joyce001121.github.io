@@ -80,7 +80,7 @@ h2{
 .f80-h94{
 	font-size: 80px;
     line-height: 94px;
-	font-weight:bold;
+	font-weight: 900;
 }
 .f20, .f20-h28, .f20-h42 {
 	font-size:20px;	 
@@ -93,7 +93,17 @@ h2{
 .f20-h42{
 	line-height: 42px;	 
 	font-weight:bold;	
+	font-style:normal;
 }
+.medium{
+	font-weight: 500;
+}
+.bold{
+	font-weight: 700;
+}
+.black{
+	font-weight: 900;
+}  
 .mb8{
 	margin-bottom: 8px;
 }
@@ -183,14 +193,16 @@ h2{
 
 /* About content */
 .about{	
-	width: 500px;
-	margin: 0 auto;
-	padding-top: 24px;
-	padding-bottom: 56px;	
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	margin-top: 64px;
+	margin-bottom: 56px;	
 }
-.about ul{
+.about ul::before{
+	content:'';
+	display: block;
 	width: 384px;
-	margin: 0 auto;
 	padding-top: 34px;
 	border-top: 1px solid black;
 }

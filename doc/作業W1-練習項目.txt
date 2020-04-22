@@ -1,0 +1,12 @@
+任務回報範例一：
+老師、助教們好，我在 excel 提交的編號是 68 號，這次訓練菜單是：
+一.利用 emmet 練習 div.class / div>ul>li*5 
+二.vscode hotkey練習:
+1.ctrl+enter:換行(真的好方便)
+2.shift+alt+ 上下鍵: copy line
+3.alt + 上下鍵: 移動上下行
+4.ctrl+shift+k: 刪除行
+
+最後附上本週的作業如下，還請助教或老師幫我看在理解上是否正確~
+NO.68	全職鬥士2組	Joyce Lee	w1	https://joyce001121.github.io/
+
