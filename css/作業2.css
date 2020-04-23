@@ -252,9 +252,6 @@ h2{
 	justify-content: center;
 	align-items: center;
 }
-.design:first-child {
-	margin-top: -80px;
-}
 .design {
 	width: 1200px;
 	display: flex;
@@ -262,6 +259,9 @@ h2{
 	justify-content: center;
 	flex-wrap: wrap;
 	justify-content: space-between;
+}
+.design:first-child {
+	margin-top: -80px;
 }
 .design p{
 	font-size:20px;
