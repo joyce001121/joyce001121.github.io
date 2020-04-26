@@ -169,7 +169,7 @@ h2{
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 960px;
+	height: 958px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -224,7 +224,7 @@ h2{
 	background: black;
 }
 .brand-center{
-	width: 1220px;
+	width: 1200px;
 	margin: 0 auto;
 	padding-top: 64px;
 	padding-bottom: 160px;
