@@ -90,8 +90,8 @@ h3 {
   line-height: 45px;
   font-weight: bold;    
   padding-bottom: 8px;
-  margin-bottom: 16px;
   border-bottom: 2px solid #000000;
+  margin-bottom: 16px;
 }
 h3 span{
   color: #A00404;
@@ -112,8 +112,8 @@ h3 span{
 	display: block;
 	width: 1200px;
 	padding-top: 24px;
-  margin-top: 48px;
-  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin-bottom: 48px;
 }
 .photo img{
   width: 324px;
