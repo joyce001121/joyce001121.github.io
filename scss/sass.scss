@@ -1,0 +1,21 @@
+.header {
+    h1 {
+        color: red;
+    }
+    .menu {
+    background: blue;
+    }
+    a {
+        color: pink;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        line-height: 2;
+    }
+    a:hover {
+        color: blue;
+        background: pink;
+    }
+    
+}
+  

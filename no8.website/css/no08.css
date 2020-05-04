@@ -1,0 +1,171 @@
+/* reset css */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+	text-decoration: none;
+}
+/* rwd img css，可當作是 CSS Reset 其中一個 */
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/* 全域 border box */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+body{
+	font-family: '微軟正黑體', 'sans-serif';
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header{
+    margin-top:20px;
+    display: flex;
+    justify-content: space-between;     
+    align-items:flex-start;
+    /* border:1px solid #000; */
+    margin-bottom: 15px;
+}
+.menu{
+    display: flex;
+    text-align: center;
+  }
+.logo a{
+    width: 250px;
+    height: 250px;
+    display: block;
+    background: url("../images/m1.png");
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;        
+}
+
+.menu li a:hover{
+	background:orange;
+}
+.menu li a{
+    background:#3399FF;  
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    padding: 10px 5px;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.content{
+    width: 75%;
+    border: 2px solid black;
+    padding: 10px;
+}
+.siderbar{
+    padding: 5px;
+    width: 20%;
+    border: 2px solid black;
+}
+.siderbar img{
+    margin-bottom: 10px;
+}
+.content h2{
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: bold;
+    margin-bottom: 24px;
+}
+.content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}  
+ 
+/* footer */
+.footer{
+    padding: 8px;
+    text-align: center;
+}
+
+@media(max-width:768px){
+    .header{
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo a{
+        width: 150px;
+        height: 150px;
+        background: url("../images/m2.png") no-repeat;
+        margin-bottom: 15px;   
+    }
+    .menu{
+        flex-wrap: wrap;
+    }
+    .menu li{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+    .content , .siderbar{
+        width: 100%;
+    }
+    .content{
+        margin-bottom: 20px;
+    }
+    .siderbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

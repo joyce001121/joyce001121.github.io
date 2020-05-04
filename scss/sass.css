@@ -1,0 +1,21 @@
+.header h1 {
+  color: red;
+}
+
+.header .menu {
+  background: blue;
+}
+
+.header a {
+  color: pink;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  line-height: 2;
+}
+
+.header a:hover {
+  color: blue;
+  background: pink;
+}
+/*# sourceMappingURL=sass.css.map */

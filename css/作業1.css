@@ -90,15 +90,15 @@ h3 {
   line-height: 45px;
   font-weight: bold;    
   padding-bottom: 8px;
-  border-bottom: 2px solid #000000;
   margin-bottom: 16px;
+  border-bottom: 2px solid #000000;
 }
-h3 small{
+h3 span{
   color: #A00404;
   font-size: 24px;  
   height:32px;    
 }
-.padding-box{
+.container{
     width: 1200px;   
     margin: 0 auto;
 }
@@ -106,7 +106,14 @@ h3 small{
     font-size:80px;       
     letter-spacing: 5px;
     line-height:90px;    
-    margin-bottom: 24px;
+}
+.header h1::after{
+  content:'';
+	display: block;
+	width: 1200px;
+	padding-top: 24px;
+  margin-top: 48px;
+  border-top: 2px solid black;
 }
 .photo img{
   width: 324px;
@@ -114,7 +121,7 @@ h3 small{
   padding-bottom: 48px;
 }
 .profile-list{
-  margin-bottom: 48px;   
+  margin-bottom: 72px;   
   padding-left: 16px; 
 }  
 .profile-list li{
@@ -134,13 +141,12 @@ h3 small{
 }  
 .education-list{
   padding-left: 16px;
-  margin-bottom: 48px;
+  margin-bottom: 72px;
   position: relative;
 }
 .education-list li{
   position: relative;
   padding-left: 32px;
-  margin-bottom: 32px;
 }
 .education-list li p::before{
   content: '';
@@ -171,11 +177,13 @@ h3 small{
   } */
   
   .skill-wrap {
-    padding: 29px 67px;
-    background-color: #415165 ;
     position:relative;
-  }
-  
+    margin-bottom: 72px;
+    padding: 24px 102px 56px 102px;
+    background-color: #415165 ;
+    text-align: center;
+    color:white;
+}
   /* 用偽元素做背景的方塊 */
   .skill-wrap:after {
     content: "";
@@ -190,22 +198,16 @@ h3 small{
     z-index:-1;
   }
   
-.skill-wrap{
-  text-align: center;
-  color:white;
-  margin-bottom: 72px;
-}
-.skill-wrap h3{
-    font-size: 32px;
-    font-weight: bold;    
-    line-height: 45px;
-    border-bottom: 1px solid #ffffff;
-    padding-bottom: 8px;
-    margin-bottom: 16px;     
+.skill-wrap h3{    
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 45px;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
 }
 .skill-wrap h3 span{
-  font-size:24px;
-  line-height: 32px;
+  color:white;
 }
 .skill-list{
   width: 240px;
@@ -219,7 +221,9 @@ h3 small{
   margin-bottom: 16px;
   padding-left: 24px;
 }
-  
+.skill-list li:last-child{ 
+  margin-bottom: 0;
+}
 .work-wrap{
   margin-bottom: 72px;
 }
@@ -231,7 +235,6 @@ h3 small{
 .work-list img{
   display: block;
 }
-
 .footer{
   background: #415165;
 }

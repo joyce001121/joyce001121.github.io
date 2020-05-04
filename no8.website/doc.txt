@@ -1,0 +1,28 @@
+
+任務1,2分享
+---任務一:
+自己想和開始做完全是兩回事
+做不到的我就參考老師的寫法了! 自己下手寫過一次+重新思考一次=練習2次了吧!XD
+.練習寫斷點的css部份!
+.換圖是利用a標籤background來實行 https://codepen.io/leeming8/pen/oNjxybW
+
+---任務二: IT邦幫忙的網站觀察
+>>斷點3個: 1200,996,767  
+
+>>ipad: 
+ 1.menu簡化:不顯示部份右方項目
+ 2.技術問答區塊:下方page control簡化成上下頁 
+>>Mobile:
+ 1.header:logo圖片做wrap
+ 2.首頁:header區塊不顯示
+ 3.menu bar: 加上小size logo/menu文字及項目都有簡化
+ 4.siderbar hidden 
+ 5.技術問答:僅顯示單一內容欄位
+ 6.頁尾:page end 顯示課程介紹
++頁數換成buttom(更多問題) 
+
+
+
+
+
+
