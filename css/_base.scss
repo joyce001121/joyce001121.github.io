@@ -1,0 +1,26 @@
+/* 全域樣式設定 */
+
+// body vs "*" 差異 : *:表示 each tag
+img {
+    width: 100%;
+}
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+//Global setup
+body {
+    font-family: 'Noto Sans TC','Roboto', sans-serif;
+
+    font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+    color:$primary-w3; 
+}
+
+a {
+    text-decoration: none;
+    color: white;
+} 
+
+

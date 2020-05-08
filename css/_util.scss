@@ -1,0 +1,29 @@
+/* flex utility */
+.d-flex{
+    display: flex;
+}
+.flex-center{
+    display: flex;
+    justify-content: center;
+}
+.flex-between{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.flex-start{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+

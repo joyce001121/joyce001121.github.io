@@ -3,27 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="css/cssreset.css">
-    <link rel="stylesheet" href="css/作業3.css"> -->
+    <!-- CSS全部先放前面,速度才不會慢 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    
     <link rel="stylesheet" href="css/all-w3.css">
+  
     <title>Document</title>
 </head>
 <body>
-    <!-- <input type="checkbox" id="menu-switch" class="menu-switch"> 
-     <label for="menu-switch" class="hamburger-menu d-sm">
-        <span>&nbsp;</span>
-        <span>&nbsp;</span>
-        <span>&nbsp;</span>
-    </label> -->
-   
-    <header class="header">
-        <a href="#"><img src="images/w3/logo-new_工作區域 1.png" alt=""></a> 
-        <ul class="header-menu">
+    <header class="header flex-between">
+        <!-- formaswome:\f0c9 
+        <a href="#" class="ham-icon">
+            <i class="fas fa-bars "></i>
+        </a> -->
+        <a>
+            <img src="../images/w3/logo-new_工作區域 1.png" alt="logo">
+        </a> 
+        
+        <ul class="nav d-flex">
+           <li><a href="#">系列鏡框</a></li>
+            <li><a href="#">門市據點</a></li>
+            <li><a href="#">部落格</a></li>
+            <li><a href="#">常見問題</a></li>
+        </ul>
+
+        <!-- Hamburger 設計posotion -->
+        <a class="ham-icon">
+            <img  src="../images/w3/ic_menu_24px.svg" alt="">
+        </a> 
+        <ul class="dropdown">
             <li><a href="#">系列鏡框</a></li>
             <li><a href="#">門市據點</a></li>
             <li><a href="#">部落格</a></li>
             <li><a href="#">常見問題</a></li>
         </ul>
+         
     </header>
 
     <section class="banner">
@@ -33,6 +47,7 @@
         </div>
     </section>
 
+    <!-- 專業的心 -->
     <section class="service">
         <h2 class="font-h2">用專業的心，做專業的事</h2>
         <ul class="service-item container">
@@ -59,11 +74,12 @@
         </ul>
     </section>
 
+    <!-- 經典系列鏡框 -->
     <section class="glasses">
         <h2 class="font-h2">經典系列鏡框</h2>
         <ul class="glasses-list container">
             <li>
-                <div class="glasses-pic"><img  src="../images/w3/product-1.png" alt="">
+                <div class="glasses-optical"><img  src="../images/w3/product-1.png" alt="">
                 </div>                
                 <h3 class="glasses-item ">
                     <img src="../images/w3/iconfinder_44_2529968.svg" alt="">
@@ -82,7 +98,7 @@
                 </h3>
             </li>    
             <li>
-                <div class="glasses-pic" >
+                <div class="glasses-optical" >
                     <img src="../images/w3/28.png" alt="">
                 </div>
                 
@@ -94,34 +110,38 @@
             </li>       
         </ul>
     </section>
-
+   
     <section class="brand">        
         <h2 class="font-h2">聯名設計鏡框</h2>
-       
-        <ul class="brand-list">
-            <!-- 經典系列 brand-item1 -->
-            <li class="brand-item1 flex-between">
+        <ul class="brand-list flex-between">
+            <!-- 聯名設計 more特效 -->
+            <li class="brand-item1-left ">
                 <img src="../images/w3/zac-wolff-2qfYizn95pk-unsplash.png" alt="">
-                <div class="brand-item1-right">
-                    <img src="../images/w3/61.png" alt="">
-                    
-                    <!-- 右下區塊 -->
-                    <div class="brand-item1-down flex-between " >
-                        <!-- 右下左圖 --> 
-                        <img src="../images/w3/24.png" alt="">
-                        <!-- 右下上圖 --> 
-                        <div class="brand-more-text">
-                            <img class="brand-more-img" src="../images/w3/34.png" alt=""> 
-                            <!-- more -->
-                            <span>MORE <img src="../images/w3/5.png" alt=""></span>
-                        </div>
-
-                    </div>
-                </div>
-                
             </li>
-            <!-- 聯名設計 brand-item1 -->
-            <li class="brand-item2 container flex-center">
+
+            <li class="brand-item1-right d-flex">
+                <img src="../images/w3/61.png" alt="">
+                
+                <!-- 右下區塊 -->
+                <div class="brand-item1-right-down d-flex" >
+                    <!-- 右下左圖 --> 
+                    <img class="boy" src="../images/w3/24.png" alt="">
+                    <!-- 右下上圖 --> 
+                    <div class="boy-right d-flex">
+                        <img src="../images/w3/34.png" alt=""> 
+                        <!-- more -->
+                        <div class="brand-more d-flex">
+                             <span> <img src="../images/w3/5.png" alt=""></span>
+                        </div>
+                       
+                    </div>
+
+                </div>
+            </li>
+           
+            
+            <!-- 聯名設計 DoubleA/Youth -->
+            <!-- <li class="brand-item2 container flex-center">
                 <div class="brand-join">
                     <img src="./images/w3/product-8.png" alt="">
                     <span>Double A+</span>
@@ -130,110 +150,141 @@
                     <img src="./images/w3/product-9.png" alt="">
                     <span>YOUTH</span>
                 </div>
-            </li>
-            <!-- 顧客推薦 -->
-            <li class="brand-item3 container">
-                <h2 class="font-h2">顧客推薦</h2>
-                <ul class="flex-between">
-                    <li class="customer">
-                        <img src="../images/w3/18.png" alt="">
-                        <div class="cust-content">
-                            <p class="cust-title">Jessy</p>
-                            <p class="cust-detail">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <p class="cust-update">Last updated 3 mins ago</p>
-                        </div>
-                    </li>
-                    <li class="customer">
-                        <img src="../images/w3/25.png" alt="">
-                        <div class="cust-content">
-                            <p class="cust-title">Karen</p>
-                            <p class="cust-detail">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <p class="cust-update">Last updated 3 mins ago</p>
-                        </div>
-                    </li>
-                    <li class="customer">
-                        <img src="../images/w3/36.png" alt="">
-                        <div class="cust-content">
-                            <p class="cust-title">Chelsea</p>
-                            <p class="cust-detail">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <p class="cust-update">Last updated 3 mins ago</p>
-                        </div>
-                    </li>
-                    <li class="customer">
-                        <img src="../images/w3/45.png" alt="">
-                        <div class="cust-content">
-                            <p class="cust-title">Jane</p>
-                            <p class="cust-detail">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                            <p class="cust-update">Last updated 3 mins ago </p>
-                        </div>
-                    </li>
+            </li> -->
+        </ul>
 
-                    
-                </ul>
+        <ul class="brand-item2 container flex-center">
+            <li class="brand-join">
+                <img src="./images/w3/product-8.png" alt="">
+                <span>Double A+</span>
+            </li>
+            <li class="brand-join">
+                <img src="./images/w3/product-9.png" alt="">
+                <span>YOUTH</span>
             </li>
         </ul>
 
     </section>
+   
+    <!-- 顧客推薦 -->
+    <section class="customer container">
+        <h2 class="font-h2">顧客推薦</h2>
+        <ul class="customer-wrap flex-between ">
+            <li class="customer-list">
+                <img src="../images/w3/18.png" alt="">
+                <div class="cust-content">
+                    <p class="cust-title">Jessy</p>
+                    <p class="cust-detail">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <p class="cust-update">Last updated 3 mins ago</p>
+                </div>
+            </li>
+            <li class="customer-list">
+                <img src="../images/w3/25.png" alt="">
+                <div class="cust-content">
+                    <p class="cust-title">Karen</p>
+                    <p class="cust-detail">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <p class="cust-update">Last updated 3 mins ago</p>
+                </div>
+            </li>
+            <li class="customer-list">
+                <img src="../images/w3/36.png" alt="">
+                <div class="cust-content">
+                    <p class="cust-title">Chelsea</p>
+                    <p class="cust-detail">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <p class="cust-update">Last updated 3 mins ago</p>
+                </div>
+            </li>
+            <li class="customer-list">
+                <img src="../images/w3/45.png" alt="">
+                <div class="cust-content">
+                    <p class="cust-title">Jane</p>
+                    <p class="cust-detail">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                    <p class="cust-update">Last updated 3 mins ago </p>
+                </div>
+            </li>
+
+            
+        </ul>
+    </section>
     
     <section class="contact">
-        <div class="contact-content">
+        <div class="contact-wrap">
             <h2 class="font-h2">聯絡我們</h2>
             <p class="contact-desc">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。   </p>
-            <p class="contact-column">姓名</p>
-            <div class="input-box"></div>
-            <p class="contact-column">聯絡電話</p>
-            <div class="input-box"></div>
-            <p class="contact-column">電子郵件</p>
-            <div class="input-box"></div>
-            <p class="contact-column">意見反應</p>
-            <div class="input-box"></div>
-           
-            <div class="agree">
-                <span class="check-box"> </span>
-                <span class="contact-column">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</span>
-            </div>
-            <div class="submit"><a href="#">確認送出</a></div>
+         
+            <form id="contact" action="" method="post">
+                <lebal for="typeName">姓名</lebal>
+                <input id="typeName" type="text" placeholder="陳小明">
+                
+                <lebal for="typePhone">聯絡電話</lebal>
+                <input id="typePhone" type="text" placeholder="0912-345-678">
+                
+                <lebal for="typeMail">電子郵件</lebal>
+                <input id="typeMail" type="text" placeholder="example@email.com">
+                
+                <lebal for="typeIdeas">意見反應</lebal>
+                <textarea id="typeIdeas" placeholder="請輸入您的意見"></textarea>
+                
+                <input id="agree" type="checkbox" value="agree">
+                <label for="agree">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
+                
+                <div class="submit">
+                   <input  type="submit" value="確認送出">
+                </div> 
+                     
+              </form>     
+
         </div>
     </section>
     
     <footer class="footer">
-        <div class="footer-menu footer-container flex-between">
-            <ul class="menu ">
-                <li><a class="menu-padding" href="#">首頁</a></li>
-                <li><a class="menu-padding" href="#">系列鏡框</a></li>
-                <li><a class="menu-padding" href="#">門市據點</a></li>
-                <li><a class="menu-padding" href="#">部落格</a></li>
-                <li><a href="#">常見問題</a></li>
+        <div class="footer-wrap container">
+            <div class="menu flex-between">
+                <ul class="menu-list flex-start">
+                    <li class="menu-item"><a href="#">首頁</a></li>
+                    <li class="menu-item"><a href="#">系列鏡框</a></li>
+                    <li class="menu-item"><a href="#">門市據點</a></li>
+                    <li class="menu-item"><a href="#">部落格</a></li>
+                    <li class="menu-item"><a href="#">常見問題</a></li>
+                </ul>
+                <ul class="social flex-end">
+                    <li class="social-item"><a href="#"><img src="../images/w3/ic_social_fb.svg" alt=""></a></li>
+                    <li class="social-item"><a href="#"><img src="../images/w3/ic_social_ig.svg" alt=""></a></li>
+                    <li class="social-item"><a href="#"><img src="../images/w3/ic_social_line.svg" alt=""></a></li>
+                </ul>
+            </div>            
+        
+            <ul class="phone-mail">
+                <li class="phone flex-start">
+                    <p>
+                        <img class="icon-phone" src="../images/w3/ic_phone_48px.svg" alt=""> <span>0800-000-000</span>
+                    </p>
+                   
+                </li>
+                <li class="mail flex-start">
+                    <p>
+                        <img class="icon-mail" src="../images/w3//ic_mail_outline_24px.svg" alt="">
+                        <span >glasses@business.com</span>
+                    </p>
+                </li>
             </ul>
-            <div class="menu-margin"></div>
-            <ul class="social flex-between">
-                <li><a href="#"><img src="../images/w3/ic_social_fb.svg" alt=""></a></li>
-                <li class="social-padding"><a href="#"><img src="../images/w3/ic_social_ig.svg" alt=""></a></li>
-                <li class="social-padding"><a href="#"><img src="../images/w3/ic_social_line.svg" alt=""></a></li>
+            
+            <ul class="copyright flex-between">
+                <li class="logo flex-start">                 
+                    <img src="../images/w3/logo-new_工作區域 1.png" alt="">              
+                    <span>Copyright © 2020 Glasses.All rights reserved.</span>
+                </li>            
+                <li class="aggrement flex-between">
+                    <span>隱私權政策</span>
+                    <span>服務條款</span>
+                </li>
             </ul>
-        </div>            
-    
-        <ul class="footer-phone footer-container">
-            <li class="flex-start mb-phone">
-                <img class="icon1-margin" src="../images/w3/ic_phone_48px.svg" alt="">
-                <span>0800-000-000</span></li>
-            <li class="flex-start">
-                <img class="icon2-margin" src="../images/w3//ic_mail_outline_24px.svg" alt="">
-                <span >glasses@business.com</span></li>
-        </ul>
-        <hr/>
-        <ul class="footer-logo footer-container flex-between">
-            <li class="copyright1 flex-start">                 
-                <img src="../images/w3/logo-new_工作區域 1.png" alt="">              
-                <span>Copyright © 2020 Glasses.All rights reserved.</span>
-            </li>            
-            <li class="copyright2 flex-between">
-                <span>隱私權政策</span>
-                <span>服務條款</span>
-            </li>
-        </ul>
-
+        </div>
     </footer>
 </body>
+
+<script src="../js/jquery3.4.1.js"></script>
+<script src="../js/w3作業.js"></script> 
+
 </html>
 
