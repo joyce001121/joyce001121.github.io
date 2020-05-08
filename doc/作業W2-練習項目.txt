@@ -44,3 +44,6 @@ HTML5元素:header/main/section/footer.html
 Best Regards,
 
 Joyce
+//----------------------------------------------------------------
+
+Lv2：做 PC、pad、mobile 的 RWD 版型，jQ 選單開關頁面與聯名設計鏡框可不做
