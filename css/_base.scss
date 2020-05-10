@@ -2,7 +2,7 @@
 
 // body vs "*" 差異 : *:表示 each tag
 img {
-    width: 100%;
+    max-width: 100%;
 }
 *, *::before, *::after{
     box-sizing: border-box;

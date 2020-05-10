@@ -56,7 +56,7 @@ table {
 
 /* 全域樣式設定 */
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 *, *::before, *::after {
@@ -553,16 +553,6 @@ a {
     -webkit-filter: brightness(500);
     filter: blur(spx);
   }
-  .brand-join {
-    width: 100%;
-  }
-  .brand-item2 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    max-width: 100%;
-  }
 }
 
 .brand {
@@ -580,71 +570,103 @@ a {
 
 .brand-list {
   max-width: 1539px;
+  max-height: 840px;
   margin: 0 auto;
   margin-bottom: 60px;
-  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .brand-item1-left {
-  max-width: 573px;
-  height: 100%;
+  width: 37%;
   margin-right: 8px;
+  /*   display: flex;  */
+}
+
+.brand-item1-left img {
+  width: 100%;
+  height: 100%;
 }
 
 .brand-item1-right {
-  max-width: 958px;
+  width: 62%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: flex-between;
-      -ms-flex-pack: flex-between;
-          justify-content: flex-between;
 }
 
-.brand-item1-right > img:first-child {
+.brand-item1-right-top {
   height: 54%;
   margin-bottom: 8px;
+  /*   display: flex; */
+}
+
+.brand-item1-right-top img {
+  width: 100%;
+  height: 100%;
 }
 
 .brand-item1-right-down {
-  height: 43%;
+  height: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: space-between;
-      -ms-flex-align: space-between;
-          align-items: space-between;
 }
 
 .boy {
-  width: 13%;
+  width: 14%;
   margin-right: 8px;
 }
 
+.boy img {
+  width: 100%;
+  height: 100%;
+}
+
 .boy-right {
-  width: 86%;
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.boy-right > img:first-child {
+.boy-right-img {
+  height: 54%;
+}
+
+.boy-right-img img {
   width: 100%;
-  height: 53%;
-  margin-bottom: 8px;
+  height: 100%;
 }
 
-.brand-more {
-  height: 43%;
-  padding-right: 83px;
+.boy-right-more {
+  height: 45%;
+}
+
+.more {
+  width: 100%;
+  height: 100%;
+  text-align: right;
+}
+
+.more img {
+  height: 100%;
+  margin-right: 10%;
 }
 
 .brand-join:nth-child(1) {
@@ -686,9 +708,11 @@ a {
     padding-right: 48px;
     padding-left: 48px;
   }
-  .brand-item1 {
-    max-width: 792px;
-    margin: 0 auto;
+  .brand h2 {
+    padding-top: 40px;
+    padding-bottom: 32px;
+  }
+  .brand-list {
     margin-bottom: 40px;
   }
   .brand-join span {
@@ -704,21 +728,26 @@ a {
     padding-right: 10px;
     padding-left: 10px;
   }
-  .brand-item1 {
-    max-width: 352px;
-    margin: 0 auto;
+  .brand h2 {
+    padding-top: 24px;
+    padding-bottom: 16px;
+  }
+  .brand-list {
     margin-bottom: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   .brand-join:first-child {
     margin-bottom: 20px;
     margin-right: 0px;
+  }
+  .brand-join {
+    width: 100%;
+  }
+  .brand-item2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    max-width: 100%;
   }
 }
 
@@ -788,6 +817,9 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     width: 48%;
+  }
+  .customer .customer-list img {
+    width: 100%;
   }
   .customer .customer-list:not(:last-child) {
     margin-bottom: 24px;
