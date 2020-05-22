@@ -57,6 +57,7 @@ table {
 /* 全域樣式設定 */
 img {
   max-width: 100%;
+  vertical-align: middle;
 }
 
 *, *::before, *::after {
@@ -67,7 +68,6 @@ img {
 }
 
 body {
-  font-family: 'Noto Sans TC','Roboto', sans-serif;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: #650300;
 }

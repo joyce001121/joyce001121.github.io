@@ -176,28 +176,28 @@ h3 span{
     margin: 0 auto;
   } */
   
-  .skill-wrap {
+  .skill-bg-relative{
     position:relative;
+  }
+  /* 用偽元素做背景的方塊 */
+  .skill-bg-relative:before {
+    content: '';
+    height: 72%;
+    width: 100%;
+    background-color: #96A9C4 ;
+    position: absolute;
+    left: 0;
+    top:50%;
+    transform: translateY(-50%);
+    z-index:-1;
+  }
+  .skill-wrap {    
     margin-bottom: 72px;
     padding: 24px 102px 56px 102px;
     background-color: #415165 ;
     text-align: center;
     color:white;
 }
-  /* 用偽元素做背景的方塊 */
-  .skill-wrap:after {
-    content: "";
-    display: block;
-    height: 360px;
-    width: 999999px;
-    position: absolute;
-    top:50%;
-    transform: translateY(-50%);
-    left: -999px;
-    background-color: #96A9C4 ;
-    z-index:-1;
-  }
-  
 .skill-wrap h3{    
   font-size: 32px;
   font-weight: bold;

@@ -18,8 +18,8 @@
       <div class="photo container"><img src="https://hexschool.github.io/webLayoutTraining1st/week1/photo.png" alt=""></div>
      
       <div class="profile container">
-           <h3 class="subtitle">個人資料 <span>PROFILE</span></h3>       
-           <ul class="profile-list f24-h36">
+           <h3 data-aos="fade-left"  data-aos-once="once" data-aos-offset="120" class="subtitle">個人資料 <span>PROFILE</span></h3>       
+           <ul data-aos="fade-up" data-aos-offset="120" data-aos-duration="2000" class="profile-list f24-h36">
              <li><p class="mb24">陳久安 Joanne Chen 
                     <br>1997- 
                     <br>應屆畢業生/接案設計師/UI設計實習生
@@ -31,8 +31,8 @@
       </div>
       
       <div class="education container">
-        <h3 class="subtitle">學歷 <span>EDUCATION</span></h3>
-        <ul class="education-list f24-h36">
+        <h3 data-aos="fade-left"  data-aos-once="once" class="subtitle">學歷 <span>EDUCATION</span></h3>
+        <ul data-aos="fade-up" data-aos-duration="2000"  class="education-list f24-h36">
           <li>
             <p class="mb32">國立六角師範大學 視覺設計學系 學士學位 | 2016－2020</p>
           </li>
@@ -42,22 +42,24 @@
         </ul>
       </div>
     
-      <div class="skill-wrap container">             
-          <h3 class="subtitle">技能 <span>SKILL</span></h3>    
-          <ul class="skill-list">
-            <li>Adobe Photoshop</li>
-            <li>Adobe Illustrator</li>
-            <li>Adobe XD</li>
-            <li>Adobe Indesign</li>
-            <li>C4D</li>
-            <li>Adobe Premiere</li>
-            <li>語言：中文、英文</li>
-          </ul>
+      <div data-aos="flip-up" data-aos-duration="2000" data-aos-once="once" class="skill-bg-relative">
+        <div data-aos="flip-up" data-aos-duration="2000"  data-aos-once="once"class="skill-wrap container">             
+            <h3 class="subtitle">技能 <span>SKILL</span></h3>    
+            <ul class="skill-list">
+              <li >Adobe Photoshop</li>
+              <li>Adobe Illustrator</li>
+              <li>Adobe XD</li>
+              <li>Adobe Indesign</li>
+              <li>C4D</li>
+              <li>Adobe Premiere</li>
+              <li>語言：中文、英文</li>
+            </ul>
+        </div>
       </div>
           
       <div class="work-wrap container"> 
-        <h3 class="subtitle">工作經驗 <span>WORK EXPERIENCE</span></h3>    
-        <ul class="work-list">
+        <h3 data-aos="fade-left"  data-aos-once="once" class="subtitle">工作經驗 <span>WORK EXPERIENCE</span></h3>    
+        <ul data-aos="fade-up" data-aos-duration="2000" class="work-list">
           <li>          
             <p class="f24-h36 mb8 bold">六角學院 視覺設計實習生｜2019/07-2020/06</p>
             <img class="mb8" src="images/Group 1.svg" alt="">
@@ -65,8 +67,8 @@
          </li> 
          <li class="f24-h36 mb32 bold">立接案 Hao Jun 酒標設計 | 2019</li>  
          <li class="f24-h36 mb32 bold">獨立接案 Exulans 酒標設計 | 2019</li>
-         <li class="f24-h36 mb32 bold">獨立接案 桃園平鎮市民健走活動提案 | 2019</li>
-         <li>
+         <li dataclass="f24-h36 mb32 bold">獨立接案 桃園平鎮市民健走活動提案 | 2019</li>
+         <li >
            <p class="f24-h36 mb8 bold">Simtree 興趣咖啡 工讀生 | 2018－2019</p>
            <img class="mb8" src="images/simtree.png" alt="">
            <p class="f20">擔任外場及吧輪合年一回土輪合所。</p>
@@ -93,4 +95,30 @@
   </div>     
 
  </body>
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+ AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 400, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+</script>
 </html>

@@ -1,0 +1,70 @@
+ --------- google fonts
+ <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,700;1,900&display=swap');
+  </style>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,700;1,900&display=swap" rel="stylesheet">
+-------------------------------------------
+老師、助教們好， 
+
+1.我在 excel 提交的資訊如下:
+
+編號：205   全職鬥士2組 Joyce Lee  https://joyce001121.github.io/
+
+
+
+針對這次對參考很同學及老師們的文章,對css 又學習到了很多,例如: 
+
+HTML5元素:header/main/section/footer.html
+
+偽元素及類別的作用及寫法
+
+版型以區塊分析
+
+字體或屬性值可以抽出共同部份一次設定
+
+背景圖片設定應用
+
+
+
+2.這次訓練菜單是：
+
+ 持續利用 emmet 練習
+
+ vscode hotkey練習
+
+ 另外,針對元素命名參考很多文章
+
+
+
+3.作業花費時間: 25hrs
+
+
+
+Best Regards,
+
+Joyce
+//----------------------------------------------------------------
+
+Lv2：做 PC、pad、mobile 的 RWD 版型，jQ 選單開關頁面與聯名設計鏡框可不做
+---------------
+任務回報範例一：
+老師、助教們好，我在 excel 提交的編號是 68 號，這次訓練菜單是：
+一.利用 emmet 練習 div.class / div>ul>li*5 
+二.vscode hotkey練習:
+1.ctrl+enter:換行(真的好方便)
+2.shift+alt+ 上下鍵: copy line
+3.alt + 上下鍵: 移動上下行
+4.ctrl+shift+k: 刪除行
+
+最後附上本週的作業如下，還請助教或老師幫我看在理解上是否正確~
+NO.68	全職鬥士2組	Joyce Lee	w1	https://joyce001121.github.io/
+//-----------------
+Album練習分享:
+1.響應式變數利用sm類別自適應md
+3.header:認識並使用bs4類別變數ex:container/py-5/mb-5/text-muted/text-right/bg-light/showdow-sm/d-flex 
+4.Album example:利用BS4.jumbotrony類別,版面比較小所以在container下再自定about類別設定max-width:600px
+5.card:利用bs4.Thumbnail加上shadow-sm,按鍵換成btn-group
+6.footer:版面col-sm-8/col-sm-4:加p段落及link button
+
+https://codepen.io/leeming8/pen/OJyoEMr?editors=1100

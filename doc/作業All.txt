@@ -1,0 +1,106 @@
+>> Zoom
+https://us04web.zoom.us/j/71007184937?pwd=M1JGUGszcWlOaXlyWS8wd3Z3VC85Zz09
+會議 ID：710 0718 4937
+密碼：3S08e2
+------- 
+>> port衝突處理:cmd輸入 > netstat -nao |find ":8080"
+找到那個ID,然後去win task中找到對應的ID並停用工作
+-------
+>> RWD video: keypoints
+.container{}實際共用寫法:
+1.max-width:1200px; 但手機:因為留padding,所以
+2.width:1200px+padding(12)=1224px;
+3.line-height:1.5(內文) 1.2(h-title)
+-->依@media斷點重寫在body{},h2~h5{}
+body{ line-height:1.5}
+h2,h3,h4,h5{ line-height:1.2}
+>> BS4:共用class命名:
+ex.h-100{height:100%}
+>> 區塊:class不要定義在區塊名ex.要加上class="header"
+----------------------------------------------------------------
+>>響應式文字排版:可修改_variable.$font-family-size... 
+
+----- html layout
+<header class="header">
+<main> sections
+<footer>  
+----------------------------
+>><form action=""> </form>
+input: bg/outline/label/placeholer;
+checkbox-custom: w3schools
+----------------------------
+>>live sass compiler 安裝:
+產出: *.css/*.min.css/*.min.css.map
+--------------------------------
+>>Favorites 擴充安裝:我的最愛目錄
+>>Petrify安裝:
+>>GULP 安裝:
+1. node.js install (cmd:node -v check version)
+2. gulp install:(cmd:npm i gulp@4 -g (enter))
+3. gulp -v (cmd:check version-->CLI version)
+4. download teacher git project:
+https://github.com/hexschool/web-layout-training-gulp
+
+5. 至4.專案目錄下安裝:cmd->輸入npm install
+6. cmd-> 輸入gulp (專案會自動開啟chrome/index.html)
+練習app/layout.ejs/page2.html
+7. 安裝bootstrap node_modules: 
+  步驟一：開啟新資料夾，將資料夾 cd 拉進終端機
+  步驟二：cmd-->npm init，一直按 enter 後，資料夾裡面會多一個 package.json 檔
+  步驟三：cmd-->npm install bootstrap，安裝成功後會多一個 node_modules 資料夾
+  步驟四：@import BS4 SCSS 檔案:
+    // Required: 加入自己的 all.scss
+    @import "../node_modules/bootstrap/scss/functions";
+    @import "variables"; // 複製一份 variable 來覆蓋
+    @import "../node_modules/bootstrap/scss/mixins";
+    @import "../node_modules/bootstrap/scss/bootstrap";
+  
+----------------------------
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500;1,700;1,900&display=swap"
+  rel="stylesheet">
+----------------------------
+>>Flex青蛙
+flex-wrap:wrap-reverse;
+flex:center(order 中間是0:2側是正負數表示 ex: order: -2;)
+align-self:flex-end;
+flex-flow: wrap column;
+-------------------------------
+>>hw1: resume design teacher comments log:
+1.避免使用 id 選取器，這會將低樣式的可用性，並且大幅提高樣式權重，導致未來覆蓋時的困難度 (權重...)
+2.不建議直接 HTML h2 標籤上寫樣式,建議還是加上類別選擇器 class 名稱會較好
+-------------------------------
+>>05.常見三種排版:flex-direction: row-reverse
+建議可以用reverse來變更排序，就不需要調整 HTML 結構順序囉
+-------------------------------
+>> Flex作業:
+01.並排卡片 https://codepen.io/leeming8/pen/vYOqvbX
+>>標題一: 文字上下推以產生高度區塊! 或是display:block;設定height!
+02.雙欄排版 https://codepen.io/leeming8/pen/OJVejdx
+03.雙欄選單設計 https://codepen.io/leeming8/pen/poJXpBx
+04.表頭表尾設計 https://codepen.io/leeming8/pen/xxGoBOX?editors=1100
+05.常見三種排版 https://codepen.io/leeming8/pen/rNVEXZo?editors=1100
+06.圖文並排 https://codepen.io/leeming8/pen/ExjqEov
+07.首頁橫幅排版 https://codepen.io/leeming8/pen/ZEGgopv
+08.圖文並排設計 https://codepen.io/leeming8/pen/LYVwmgw
+09.訂單明細 https://codepen.io/leeming8/pen/VwLodwe
+10.產品列表 https://codepen.io/leeming8/pen/xxGvQpX
+
+------------------------------
+有程設工作
+工作彈性:在家工作
+salary: xxx
+------------------------------
+>>> 老師:使用h1,h2,h3 tag 會影響SEO
+舉例來說，網頁中唯一且最重要的內容，會使用 h1 來做
+而接下來頁面中可能會有多個主題區塊，那該主題的標題就會使用 h2 或是 h3
+每個主題中的列表標題，就會使用 h4
+也就是依照這個標題的重要性來做選擇
+但這也沒有絕對的對錯哦
+只是正確使用語意標籤是有助於 SEO，且往後維護也會更加容易哩
+>>>
+-------------------------------
+>> Flex作業:
+01.並排卡片 https://codepen.io/leeming8/pen/vYOqvbX
+>>標題一: 文字上下推以產生高度區塊! 或是display:block;設定height!
+------------------------------
+    

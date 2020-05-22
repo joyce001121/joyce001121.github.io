@@ -3,13 +3,12 @@
 @import "reset";
 @import "base";
 @import "util";
+//---- google font 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&family=Roboto:wght@400;500;700;900&display=swap');
 
 // @import "layout";
 // @import "index"; 
 // @import "cart";
-
-//---- google font 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&family=Roboto:wght@400;500;700;900&display=swap');
 
 //---setup h1,h2 class
 .font-h1{
@@ -38,7 +37,6 @@
         font-size:20px;
         line-height: 30px;
         text-decoration: none;
-        // color:white;
     }
     .nav li:last-child a{
         padding-right: 0;
@@ -449,7 +447,7 @@
     top: 50%;
     left: 50%;
     transform:translate(-50%,-50%);
-    z-index: 99;
+       z-index: 99;
     white-space:nowrap;
 }
 
