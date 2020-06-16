@@ -3,28 +3,13 @@
 @import "reset";
 @import "base";
 @import "util";
+@import "w3-qa";
 //---- google font 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500&family=Roboto:wght@400;500;700;900&display=swap');
 
-// @import "layout";
-// @import "index"; 
-// @import "cart";
-
-//---setup h1,h2 class
-.font-h1{
-    font-size: 64px;
-    line-height: 96px;
-    font-weight: medium ;
-}
-.font-h2{
-    font-size: 48px;
-    line-height: 72px;
-    font-weight: bold;
-    margin-bottom: 60px;
-    text-align: center;
-}
 
 // header area
+
 .header{   
     background: $header-w3;
     height: 108px;
@@ -32,11 +17,12 @@
     padding-left: 88px;
     align-items: center;
     position: relative;
-    .nav li a {
+    .header-menu>a{
         padding-right: 64px;
         font-size:20px;
         line-height: 30px;
         text-decoration: none;
+        display: block;
     }
     .nav li:last-child a{
         padding-right: 0;
@@ -76,7 +62,7 @@
   }
   
 /* .header-menu */ 
-@media (max-width:768px){ 
+@media (max-width:767px){ 
     .header{
         height: 50px;
         display: flex;
@@ -121,7 +107,7 @@
         font-weight: bold;
     }
 }
-@media (max-width:768px){
+@media (max-width:767px){
     .banner {
         background: url("../images/w3/68.png") center/ cover no-repeat ;
     }
@@ -202,10 +188,8 @@
     }
 }
 
-@media (max-width: 768px){
-    .container{
-        max-width: 767px;
-    }
+@media (max-width: 767px){
+   
     .service{
         padding-top: 32px;
      }
@@ -305,7 +289,7 @@
         width: 50%;
     }
 }
-@media (max-width:768px){  
+@media (max-width:767px){  
     .font-h2{
         font-size: 24px;
         line-height: 48px;
@@ -447,7 +431,7 @@
     top: 50%;
     left: 50%;
     transform:translate(-50%,-50%);
-       z-index: 99;
+    z-index: 99;
     white-space:nowrap;
 }
 
@@ -472,7 +456,7 @@
         line-height: 43px;
     }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .brand{
         padding-top: 24px;
         padding-bottom: 189px;
@@ -553,7 +537,7 @@
     }
 }
 
-@media (max-width:768px){
+@media (max-width:767px){
     .customer{
         margin-top: -165px;
         margin-bottom: 24px;
@@ -669,7 +653,7 @@ input[type="text"], textarea {
         padding: 7px 36px;
       }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .contact-wrap{
         padding-top: 24px;
         padding-bottom: 48px;
@@ -800,7 +784,7 @@ input[type="text"], textarea {
     }
 }    
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .footer-wrap{
         padding :24px 12px;
         position:relative;
