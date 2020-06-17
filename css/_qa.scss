@@ -53,9 +53,7 @@
     display: inline-block;
     width: 40px;
     height: 35px;
-    background-size: cover;
-    background-position: center center;
-    background-image: url("../images/w3/arrow-down.svg");
+    background: url("../images/w3/arrow-down.svg") center/cover no-repeat;
   }
 }
 .qa-item-answer {
