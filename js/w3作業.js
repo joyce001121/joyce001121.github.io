@@ -5,7 +5,7 @@ $('.ham-icon').click(function(e) {
   })
 
 // QA: arrow轉180度/collapse顯示
-$(".qa-item-detail").click(function() {
+$(".qa-list h4").click(function() {
    $(this).parent().toggleClass("show");
 });
 
