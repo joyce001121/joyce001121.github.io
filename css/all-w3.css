@@ -239,32 +239,32 @@ a {
   font-weight: bold;
 }
 
-.qa h3 {
+.qa .qa-title {
   font-size: 32px;
   line-height: 45px;
   margin-bottom: 16px;
 }
 
-.qa-list {
+.qa-item {
   border: 1px solid #000;
 }
 
-.qa-list:not(:last-child) {
+.qa-item:not(:last-child) {
   border-bottom: 0;
 }
 
-.qa-list.show .qa-item-detail::after {
+.qa-item.show .qa-item-header::after {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   -webkit-transform-origin: center center;
           transform-origin: center center;
 }
 
-.qa-list.show .qa-item-answer {
+.qa-item.show .qa-item-answer {
   display: block;
 }
 
-.qa-item-detail {
+.qa-item-header {
   padding: 22px 38px;
   font-size: 20px;
   line-height: 24px;
@@ -277,7 +277,7 @@ a {
           justify-content: space-between;
 }
 
-.qa-item-detail::after {
+.qa-item-header::after {
   content: "";
   display: inline-block;
   width: 40px;
@@ -316,15 +316,15 @@ a {
   .qa {
     padding-bottom: 104px;
   }
-  .qa h3 {
+  .qa .qa-title {
     font-size: 28px;
     line-height: 40px;
   }
-  .qa-item-detail {
+  .qa-item-header {
     padding: 16px;
     font-size: 16px;
   }
-  .qa-item-detail::after {
+  .qa-item-header::after {
     width: 39px;
     height: 24px;
   }
@@ -356,15 +356,15 @@ a {
   .qa {
     padding-bottom: 56px;
   }
-  .qa h3 {
+  .qa .qa-title {
     font-size: 20px;
     line-height: 28px;
   }
-  .qa-item-detail {
+  .qa-item-header {
     padding: 16px;
     font-size: 16px;
   }
-  .qa-item-detail::after {
+  .qa-item-header::after {
     width: 39px;
     height: 24px;
   }

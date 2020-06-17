@@ -20,21 +20,21 @@
   padding-bottom: 156px;
   color: black;
   font-weight: bold;
-  h3 {
+  .qa-title {
     font-size: 32px; //32,28,20
     line-height: 45px; //45,40,28
     margin-bottom: 16px; //all
   }
 }
-.qa-list {
+.qa-item {
   border: 1px solid #000;
   &:not(:last-child) {
     border-bottom: 0;
   }
 }
-.qa-list.show {
+.qa-item.show {
   // arrow轉180度
-  .qa-item-detail::after {
+  .qa-item-header::after {
       transform: rotate(180deg);
       transform-origin: center center;
   }
@@ -43,7 +43,7 @@
     display: block;
   }
 }
-.qa-item-detail {
+.qa-item-header {
   padding: 22px 38px;
   font-size: 20px; //20,16,16
   line-height: 24px;
@@ -89,12 +89,12 @@
   //QA 字型間距
   .qa {
     padding-bottom: 104px; // 104,56
-    h3 {
+    .qa-title {
       font-size: 28px; //32,28,20
       line-height: 40px; //45,40,28
     }
   }
-  .qa-item-detail {
+  .qa-item-header {
     padding: 16px;
     font-size: 16px; //20,16,16
     &::after {
@@ -130,12 +130,12 @@
   //QA 字型間距
   .qa {
     padding-bottom: 56px; // 104,56
-    h3 {
+    .qa-title {
       font-size: 20px; //32,28,20
       line-height: 28px; //45,40,28
     }
   }
-  .qa-item-detail {
+  .qa-item-header {
     padding: 16px;
     font-size: 16px; //20,16,16
     &::after {
