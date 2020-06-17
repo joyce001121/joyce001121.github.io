@@ -212,24 +212,24 @@ a {
   display: block;
 }
 
-.question.bg-cover {
+.qa-banner.bg-cover {
   background: url("../images/w3/72@2x.png") center/cover no-repeat;
 }
 
-.question-banner {
+.qa-banner-title {
   padding-top: 230px;
   padding-bottom: 16px;
   margin-bottom: 88px;
 }
 
-.question-banner > h1 {
+.qa-banner-title > h1 {
   font-size: 64px;
   font-weight: bold;
   padding-right: 10px;
   color: black;
 }
 
-.question-banner img {
+.qa-banner-title img {
   width: 58px;
 }
 
@@ -299,18 +299,18 @@ a {
   .container {
     max-width: 672px;
   }
-  .question-banner {
+  .qa-banner-title {
     padding-top: 247px;
     padding-bottom: 10px;
     margin-bottom: 40px;
   }
-  .question-banner > h1 {
+  .qa-banner-title > h1 {
     font-size: 48px;
     font-weight: bold;
     padding-right: 16spx;
     color: black;
   }
-  .question-banner > img {
+  .qa-banner-title > img {
     width: 48px;
   }
   .qa {
@@ -339,18 +339,18 @@ a {
   .container {
     max-width: 360px;
   }
-  .question-banner {
+  .qa-banner-title {
     padding-top: 111px;
     padding-bottom: 8px;
     margin-bottom: 24px;
   }
-  .question-banner > h1 {
+  .qa-banner-title > h1 {
     font-size: 28px;
     font-weight: bold;
     padding-right: 16spx;
     color: black;
   }
-  .question-banner > img {
+  .qa-banner-title > img {
     width: 24px;
   }
   .qa {
