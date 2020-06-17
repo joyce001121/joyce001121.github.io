@@ -204,6 +204,14 @@ a {
   position: absolute;
 }
 
+.d-none {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 .question.bg-cover {
   background: url("../images/w3/72@2x.png") center/cover no-repeat;
 }
@@ -241,9 +249,25 @@ a {
   border: 1px solid #000;
 }
 
+.qa-list:not(:last-child) {
+  border-bottom: 0;
+}
+
+.qa-list.show .qa-item-detail::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.qa-list.show .qa-item-answer {
+  display: block;
+}
+
 .qa-item-detail {
   padding: 22px 38px;
-  border-bottom: 1px solid #000000;
+  font-size: 20px;
+  line-height: 24px;
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -253,22 +277,27 @@ a {
           justify-content: space-between;
 }
 
-.qa-item-detail h4 {
-  font-size: 20px;
+.qa-item-detail::after {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 35px;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../images/w3/arrow-down.svg");
 }
 
 .qa-item-answer {
   padding: 22px 38px;
   font-size: 16px;
   line-height: 24px;
-  background-color: #F2F2F2;
-  border-bottom: 1px solid #000000;
+  background-color: #f2f2f2;
+  border-top: 1px solid #000000;
 }
 
 @media (max-width: 992px) {
   .container {
     max-width: 672px;
-    margin: 0 auto;
   }
   .question-banner {
     padding-top: 247px;
@@ -293,12 +322,14 @@ a {
   }
   .qa-item-detail {
     padding: 16px;
-  }
-  .qa-item-detail h4 {
     font-size: 16px;
   }
+  .qa-item-detail::after {
+    width: 39px;
+    height: 24px;
+  }
   .qa-item-answer {
-    padding: 22px 38px;
+    padding: 16px;
     font-size: 14px;
     line-height: 21px;
   }
@@ -306,8 +337,7 @@ a {
 
 @media (max-width: 767px) {
   .container {
-    max-width: 352px;
-    margin: 0 auto;
+    max-width: 360px;
   }
   .question-banner {
     padding-top: 111px;
@@ -329,6 +359,19 @@ a {
   .qa h3 {
     font-size: 20px;
     line-height: 28px;
+  }
+  .qa-item-detail {
+    padding: 16px;
+    font-size: 16px;
+  }
+  .qa-item-detail::after {
+    width: 39px;
+    height: 24px;
+  }
+  .qa-item-answer {
+    padding: 16px;
+    font-size: 14px;
+    line-height: 21px;
   }
 }
 
